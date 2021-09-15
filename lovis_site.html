@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lovis - Schülersprechewahl</title>
+</head>
+<body>
+    <div class="the_main_div">
+        <img src="lovis_image_1.png" style="position: relative; height: 90vh; left: 50%; transform: translate(-50%, 0%);">
+        <div class="text_absolute">
+            <center>
+                <div id="h_1_back"><a class="h_1"><b>Bist du schön wählst du Löhn</b></a></div>
+                <div></div>
+                <div id="h_2_back"><a class="h_2">Weil ich eure Interessen wirklich vertrete</a></div>
+            </center>
+        </div>
+        <div style="position: relative; height: 10vh;"></div>
+        <div>
+            <center>
+                <a class="subheading_1">Klicke auf die Icons unten um mehr zu erfahren</a>
+                <div></div>
+                <img id="the_snacks_img" src="Snacks.png" height="300">
+                <div id="the_snacks_text">
+                    <a class="question_class">Was hat schon immer in der Schule gefehlt?</a>
+                    <div style="height: 10px;"></div>
+                    Eine richtig guter Snackautomat
+                    <br />
+                    -> Neue Sofas und einen Snackautomaten, für die besseren Vibes
+                </div>
+                <img id="the_wifi_img" src="Free_Wifi.png" height="300" width="300">
+                <div id="the_wifi_text">
+                    <a class="question_class">Was ist das wichtigeste in der Schule?</a>
+                    <div style="height: 10px;"></div>
+                    Natürlich das freie WLAN
+                    <br />
+                    -> FREIES WLAN für alle
+                </div>
+                <img id="the_tt_img" src="Tischtennis.png" height="300" width="300">
+                <div id="the_tischtennis_text">
+                    <a class="question_class">Was ist besonders in den Pausen wichtig?</a>
+                    <div style="height: 10px;"></div>
+                    Mehr Möglichkeiten für Aktivitäten
+                    <br />
+                    -> Für neu Tischtennisplatten und einen Basketballkorb auf dem Pausenhof
+                </div>
+                <img id="the_smv_img" src="SMV.png" height="300" width="300">
+                <div id="the_smv_text">
+                    <a class="question_class">Was habe ich bisher schon gemacht?</a>
+                    <div style="height: 10px;"></div>
+                    Seit 4 Jahren Mitglied der SMV und weiß wie es läuft
+                    <br />
+                    -> Schon viel Erfahrung wie man Events plant, für mehr Aktionen/Ausflüge an der Schule
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="the_circle_pointer">
+        <a><b>Wähle</b><br /><b>Lovis Löhn</b></a>
+    </div>
+</body>
+
+    <script>
+
+        document.getElementById("the_snacks_text").style.visibility = "hidden";
+        document.getElementById("the_snacks_text").style.height = "0px";
+
+        document.getElementById("the_wifi_text").style.visibility = "hidden";
+        document.getElementById("the_wifi_text").style.height = "0px";
+
+        document.getElementById("the_tischtennis_text").style.visibility = "hidden";
+        document.getElementById("the_tischtennis_text").style.height = "0px";
+
+        document.getElementById("the_tischtennis_text").style.visibility = "hidden";
+        document.getElementById("the_tischtennis_text").style.height = "0px";
+
+        document.getElementById("the_smv_text").style.visibility = "hidden";
+        document.getElementById("the_smv_text").style.height = "0px";
+
+        the_snacks_button = document.getElementById("the_snacks_img");
+        the_wifi_button = document.getElementById("the_wifi_img");
+        the_tt_button = document.getElementById("the_tt_img");
+        the_smv_button = document.getElementById("the_smv_img");
+
+        the_snacks_button.addEventListener("click", function(e){
+            if(document.getElementById("the_snacks_text").style.visibility == "hidden"){
+                document.getElementById("the_snacks_text").style.visibility = "";
+                document.getElementById("the_snacks_text").style.height = "";
+            }else{
+                document.getElementById("the_snacks_text").style.visibility = "hidden";
+                document.getElementById("the_snacks_text").style.height = "0px";
+            }
+        })
+
+        the_wifi_button.addEventListener("click", function(e){
+            if(document.getElementById("the_wifi_text").style.visibility == "hidden"){
+                document.getElementById("the_wifi_text").style.visibility = "";
+                document.getElementById("the_wifi_text").style.height = "";
+            }else{
+                document.getElementById("the_wifi_text").style.visibility = "hidden";
+                document.getElementById("the_wifi_text").style.height = "0px";
+            }
+        })
+
+        the_tt_button.addEventListener("click", function(e){
+            if(document.getElementById("the_tischtennis_text").style.visibility == "hidden"){
+                document.getElementById("the_tischtennis_text").style.visibility = "";
+                document.getElementById("the_tischtennis_text").style.height = "";
+            }else{
+                document.getElementById("the_tischtennis_text").style.visibility = "hidden";
+                document.getElementById("the_tischtennis_text").style.height = "0px";
+            }
+        })
+
+        the_smv_button.addEventListener("click", function(e){
+            if(document.getElementById("the_smv_text").style.visibility == "hidden"){
+                document.getElementById("the_smv_text").style.visibility = "";
+                document.getElementById("the_smv_text").style.height = "";
+            }else{
+                document.getElementById("the_smv_text").style.visibility = "hidden";
+                document.getElementById("the_smv_text").style.height = "0px";
+            }
+        })
+
+
+    </script>
+
+    <style>
+
+        body{
+            background: linear-gradient(45deg, #000, #3a3a3a);
+            color: #fff;
+            font-family: Comic Sans MS, arial;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            font-size: 17px;
+        }
+
+        .the_circle_pointer{
+            position: absolute;
+            top: 5;
+            left: 5;
+            color: transparent;
+            background: linear-gradient(90deg, #930000, #d65d00);
+            height: 105px;
+            width: 105px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background-clip: text;
+            border: 5px solid rgba(0, 0, 0, 0.7);
+            animation: 5s spin infinite ease-in-out;
+        }
+
+        @keyframes spin{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .los_wahl{
+            color: transparent;
+            background: linear-gradient(90deg, #7b0000, #ff0000);
+            font-size: 5vh;
+            background-clip: text;
+            margin: 30px;
+        }
+
+        .h_1{
+            color: transparent;
+            background: linear-gradient(90deg, #930000, #d65d00);
+            background-clip: text;
+            font-size: 7vh;
+            text-align: center;
+        }
+
+        .h_2{
+            color: transparent;
+            background: linear-gradient(90deg, #fff, #cfcfcf);
+            background-clip: text;
+            font-size: 3vh;
+            text-align: center;
+        }
+
+        .lovis_background{
+            position: absolute;
+            background-color: blue;
+            height: 40px;
+            width: 40px;
+        }
+
+        .the_main_div{
+            position: absolute;
+            height: 95vh;
+            width: 99.5vw;
+            top: 0;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+
+        .scroll_div{
+
+        }
+
+        .text_absolute{
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            background: rgba(0, 0, 0, 0.6);
+            transform: translate(-50%, -50%);
+            width: 98vw;
+        }
+
+        .question_class{
+            color: transparent;
+            background: linear-gradient(90deg, #930000, #d65d00);
+            background-clip: text;
+            text-align: center;
+        }
+
+        .subheading_1{
+            color: transparent;
+            background: linear-gradient(90deg, #930000, #d65d00);
+            background-clip: text;
+        }
+
+
+    </style>
+
+</html>
